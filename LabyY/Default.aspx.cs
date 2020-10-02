@@ -17,7 +17,7 @@ namespace LabyY
 
         protected void Btn_Submit_Click(object sender, EventArgs e)
         {
-            lbl_Result.Text = "Доброго дня,? " + tb_FirstName.Text + " " + tb_LastName.Text + "! Ласкаво просимо в додаток ASP.NET!";
+            lbl_Result.Text = "Доброго дня, " + tb_FirstName.Text + " " + tb_LastName.Text + "! Ласкаво просимо в додаток ASP.NET!";
             lbl_Result.ForeColor = Color.Red;
         }
     }
