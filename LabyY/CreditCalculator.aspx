@@ -22,7 +22,7 @@
         <div style ="text-align:left">
             <table>
                 <tr>
-                    <td class="auto-style2">ВВедіть вартість авто:</td>
+                    <td class="auto-style2">Введіть вартість авто:</td>
                     <td class="auto-style2">
                         <asp:TextBox ID="PriceTextBox" runat="server"></asp:TextBox></td>
                 </tr>
@@ -32,7 +32,7 @@
                         <asp:TextBox ID="RateTextBox" runat="server" TextMode = "MultiLine" Rows = "5" Wrap = "true"></asp:TextBox></td>
                 </tr>
                 <tr>
-                    <td style ="width:auto">ВВедить кількість місяців кредитування:</td>
+                    <td style ="width:auto">Введіть кількість місяців кредитування:</td>
                     <td style ="width:auto">
                         <asp:TextBox ID="PeriodTextBox" runat="server" TextMode = "Password"></asp:TextBox></td>
                 </tr>

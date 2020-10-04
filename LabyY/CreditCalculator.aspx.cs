@@ -25,9 +25,9 @@ namespace LabyY
             decimal payment;
             decimal.TryParse(PriceTextBox.Text, out decimal price);
             decimal.TryParse(RateTextBox.Text, out decimal rate);
-            rate /= 100;
+            //rate /= 100;
             int.TryParse(PeriodTextBox.Text, out int period);
-            payment = (price + price * rate) / period;
+            payment = (price + rate * 0.1m) / period;
             PaymentLabel.Text = "Щомісячний платіж = " + payment.ToString();
         }
     }
