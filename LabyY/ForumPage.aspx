@@ -15,7 +15,7 @@
         <asp:RadioButtonList ID="RadioButtonList1" runat="server">
             <asp:ListItem Value="Гарний сайт"></asp:ListItem>
             <asp:ListItem Value="Є цікаве"></asp:ListItem>
-            <asp:ListItem Value="Не був(ла), піду подивлюсь">что-то написано</asp:ListItem>
+            <asp:ListItem Value="Не був(ла), піду подивлюсь"></asp:ListItem>
             <asp:ListItem Value="Не подобається" />
         </asp:RadioButtonList><br />
         <input type="submit" value="Проголосувати" />

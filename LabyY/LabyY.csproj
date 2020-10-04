@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="CreditCalculator.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="DropDownList.aspx" />
     <Content Include="ForumPage.aspx" />
     <Content Include="frmDemo.aspx" />
     <Content Include="Web.config" />
@@ -87,6 +88,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownList.aspx.cs">
+      <DependentUpon>DropDownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownList.aspx.designer.cs">
+      <DependentUpon>DropDownList.aspx</DependentUpon>
     </Compile>
     <Compile Include="ForumPage.aspx.cs">
       <DependentUpon>ForumPage.aspx</DependentUpon>
