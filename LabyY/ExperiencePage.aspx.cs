@@ -19,25 +19,20 @@ namespace LabyY
 
         protected void AddExperience(object sender, EventArgs e)
         {
-            if (i < max)
-            {
-                TextBox textBox = new TextBox()
+            
+                if (i < max)
                 {
-                    ID = "textBox" + i
-                };
-                tb[i] = textBox;
-                i++;                                                   
-            }
-            for(int a =0; a < max; a++)
-            {
-                if (tb[a] != null)
-                {
-                    Places.Controls.Add(tb[a]);
+                    TextBox textBox = new TextBox()
+                    {
+                        ID = "textBox" + i
+                    };
+                    tb[i] = textBox;
+                    Places.Controls.Add(tb[i]);
                     Label label = new Label() { Text = "<br/><br/>" };
                     Places.Controls.Add(label);
+                    i++;
                 }
-                else break;
-            }
-        }
+            
+        }        
     }
 }
