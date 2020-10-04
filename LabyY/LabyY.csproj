@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cities.aspx" />
     <Content Include="CreditCalculator.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="DropDownList.aspx" />
@@ -75,6 +76,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cities.aspx.cs">
+      <DependentUpon>Cities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cities.aspx.designer.cs">
+      <DependentUpon>Cities.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CreditCalculator.aspx.cs">
       <DependentUpon>CreditCalculator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
