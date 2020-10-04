@@ -33,7 +33,7 @@ namespace LabyY
                 if (tb[a] != null)
                 {
                     Places.Controls.Add(tb[a]);
-                    Label label = new Label();
+                    Label label = new Label() { Text = "<br/><br/>" };
                     Places.Controls.Add(label);
                 }
                 else break;
