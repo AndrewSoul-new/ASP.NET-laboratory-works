@@ -9,9 +9,9 @@ namespace LabyY
 {
     public partial class ExperiencePage : System.Web.UI.Page
     {
-        int i = 0;
-        int max = 10;
-        TextBox[] tb = new TextBox[10];
+        static int i = 0;
+        static int max = 10;
+        TextBox tb;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,20 +19,17 @@ namespace LabyY
 
         protected void AddExperience(object sender, EventArgs e)
         {
-            
-                if (i < max)
+            if(i < max)
+            {              
+                for(int j = 0;j<=i;j++)
                 {
-                    TextBox textBox = new TextBox()
-                    {
-                        ID = "textBox" + i
-                    };
-                    tb[i] = textBox;
-                    Places.Controls.Add(tb[i]);
-                    Label label = new Label() { Text = "<br/><br/>" };
-                    Places.Controls.Add(label);
-                    i++;
+                    tb = new TextBox() { ID = "textbox" + i };
+                    Places.Controls.Add(tb);
+                    Label label = new Label() { Text = "<br/> <br/>" };
+                    Places.Controls.Add(label);                    
                 }
-            
+                i++;
+            }
         }        
     }
 }
