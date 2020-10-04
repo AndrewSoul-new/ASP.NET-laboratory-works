@@ -71,6 +71,7 @@
     <Content Include="CreditCalculator.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="DropDownList.aspx" />
+    <Content Include="ExperiencePage.aspx" />
     <Content Include="ForumPage.aspx" />
     <Content Include="frmDemo.aspx" />
     <Content Include="Web.config" />
@@ -103,6 +104,13 @@
     </Compile>
     <Compile Include="DropDownList.aspx.designer.cs">
       <DependentUpon>DropDownList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExperiencePage.aspx.cs">
+      <DependentUpon>ExperiencePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExperiencePage.aspx.designer.cs">
+      <DependentUpon>ExperiencePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ForumPage.aspx.cs">
       <DependentUpon>ForumPage.aspx</DependentUpon>
