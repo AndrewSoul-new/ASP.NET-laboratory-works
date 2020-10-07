@@ -13,9 +13,9 @@
         <asp:Panel ID="Places" runat="server">
             <asp:TextBox ID="first" runat="server"></asp:TextBox>
             <br />
-            <br />
+            <br />        
         </asp:Panel>
-        <asp:Button ID="AddButton" runat="server" Text="Еще" OnCommand="AddExperience" CommandName="Add" />
+       <asp:Button ID="AddButton" runat="server" Text="Еще" OnCommand="AddExperience" CommandName="Add" />
     </form>
 </body>
 </html>
