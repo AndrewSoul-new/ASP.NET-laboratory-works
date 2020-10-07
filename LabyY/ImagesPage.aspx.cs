@@ -9,9 +9,18 @@ namespace LabyY
 {
     public partial class Images : System.Web.UI.Page
     {
+        public static int count = 1;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void NextImage(object sender, EventArgs e)
+        {
+            count++;
+            if (count == 10) count = 1;
+            Image1.ImageUrl = "ImagesFolder/" + count + ".jpg";
         }
     }
 }

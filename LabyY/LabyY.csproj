@@ -74,7 +74,7 @@
     <Content Include="ExperiencePage.aspx" />
     <Content Include="ForumPage.aspx" />
     <Content Include="frmDemo.aspx" />
-    <Content Include="Images.aspx" />
+    <Content Include="ImagesPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -127,12 +127,12 @@
     <Compile Include="frmDemo.aspx.designer.cs">
       <DependentUpon>frmDemo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Images.aspx.cs">
-      <DependentUpon>Images.aspx</DependentUpon>
+    <Compile Include="ImagesPage.aspx.cs">
+      <DependentUpon>ImagesPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Images.aspx.designer.cs">
-      <DependentUpon>Images.aspx</DependentUpon>
+    <Compile Include="ImagesPage.aspx.designer.cs">
+      <DependentUpon>ImagesPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
