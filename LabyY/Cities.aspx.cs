@@ -22,8 +22,27 @@ namespace LabyY
                 if (!string.IsNullOrEmpty(citiesList))
                     Message.Text = "Вы выбрали города: <br/>" + citiesList;
                 else
-                    Message.Text = "Выберите город";
+                    Message.Text = "Выберите город";                
             }
+            if (Page.IsPostBack)
+            {
+                Message.Text = "Вы поедете " + Calendar1.SelectedDate.ToShortDateString();
+            }
+        }
+
+        protected void CallSelectChange(object sender, EventArgs e)
+        {
+            if (Calendar1.SelectedDate > DateTime.Now)
+            {
+                CalendarMessage.Text = "Действительно хотите поехать " + Calendar1.SelectedDate.ToShortDateString() + "?";
+                Button ok = new Button
+                {
+                    Text = "OK",
+                    Width = 100
+                };
+                CitieForm.Controls.Add(ok);
+            }
+            else TextToUser.Text = "Выберите дату";
         }
     }
 }

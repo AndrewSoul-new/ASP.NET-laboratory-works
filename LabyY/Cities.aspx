@@ -25,6 +25,9 @@
                 <asp:Label ID="Message" runat="server"></asp:Label><br />
             </p>
         </div>
+        <asp:Label ID="TextToUser" runat="server" Text=""></asp:Label>
+        <asp:Calendar ID="Calendar1" runat="server" BackColor="LightBlue" CellPadding="3" CellSpacing="3" NextPrevFormat="FullMonth" SelectionMode="DayWeekMonth" OnSelectionChanged="CallSelectChange"></asp:Calendar>
+        <asp:Label ID="CalendarMessage" runat="server" Text=""></asp:Label>
     </form>
 </body>
 </html>
