@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <h3>Image Example</h3>
-        <asp:Image ID="Images" runat="server" ImageAlign="Top" AlternateText="Нет картинки" Width="300" ImageUrl="Images/1.jpg"/>
+        <asp:Image ID="Images" runat="server" ImageAlign="Top" AlternateText="Нет картинки" Width="300" ImageUrl="ImagesFolder/1.jpg"/>
     </form>
 </body>
 </html>
