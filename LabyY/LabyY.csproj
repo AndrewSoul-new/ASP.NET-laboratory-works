@@ -75,6 +75,7 @@
     <Content Include="ForumPage.aspx" />
     <Content Include="frmDemo.aspx" />
     <Content Include="ImagesPage.aspx" />
+    <Content Include="ValidPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +136,13 @@
       <DependentUpon>ImagesPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidPage.aspx.cs">
+      <DependentUpon>ValidPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidPage.aspx.designer.cs">
+      <DependentUpon>ValidPage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
