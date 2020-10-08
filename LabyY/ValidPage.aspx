@@ -20,13 +20,13 @@
 
             <asp:Label ID="AgeLabel" runat="server" Text="Возраст пользователя: "></asp:Label> &nbsp;
             <asp:TextBox ID="AgeTextbox" runat="server"></asp:TextBox>
-            <asp:RangeValidator ID="AgeRangeValidator" runat="server" ErrorMessage="Возраст пользователя должен быть от 18 до 70 лет!" MinimumValue="18" MaximumValue="70" Type="Integer"></asp:RangeValidator><br />
+            <asp:RangeValidator ID="AgeRangeValidator" runat="server" ErrorMessage="Возраст пользователя должен быть от 18 до 70 лет!" MinimumValue="18" MaximumValue="70" Type="Integer" ControlToValidate="AgeTextbox"></asp:RangeValidator><br />
 
             <asp:Label ID="PasswordLabel1" runat="server" Text="Пароль: "></asp:Label>
             <asp:TextBox ID="PasswordTextbox1" runat="server" TextMode="Password"></asp:TextBox>
             <asp:Label ID="PasswordLabel2" runat="server" Text="Повторить пароль: "></asp:Label>
             <asp:TextBox ID="PasswordTextbox2" runat="server" TextMode="Password"></asp:TextBox>
-            <asp:CompareValidator ID="PasswordCompareValidator" runat="server" ErrorMessage="Паоли не совпадают" ControlToCompare="PasswordTextbox1" ControlToValidate="PasswordTextbox2"></asp:CompareValidator><br />
+            <asp:CompareValidator ID="PasswordCompareValidator" runat="server" ErrorMessage="Пароли не совпадают" ControlToCompare="PasswordTextbox1" ControlToValidate="PasswordTextbox2"></asp:CompareValidator><br />
 
             <asp:Label ID="SalaryLabel" runat="server" Text="Зарплата(кратная 10): "></asp:Label>
             <asp:TextBox ID="SalaryTextbox" runat="server"></asp:TextBox>
